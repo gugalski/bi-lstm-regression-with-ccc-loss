@@ -1,0 +1,28 @@
+audio:
+  sample_rate: 16000
+
+features:
+  feature_set: eGeMAPSv02
+  feature_level: LowLevelDescriptors
+  cache_dir: outputs/features/
+
+model:
+  input_size: 88
+  projection_size: 128
+  hidden_size: 256
+  num_layers: 2
+  dropout: 0.4
+  bidirectional: true
+
+training:
+  loss: ccc
+  batch_size: 32
+  max_epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 10
+  seed: 42
+
+cv:
+  n_splits: 5
+  group_col: subject_id
