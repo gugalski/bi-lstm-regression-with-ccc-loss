@@ -1,4 +1,4 @@
-### BiLSTM + Attention with CCC Loss
+# BiLSTM + Attention with CCC Loss
 
 Predicts depression severity (PHQ-9 score, 0–27) from voice recordings using a Bidirectional LSTM
 with Bahdanau attention, trained with Concordance Correlation Coefficient (CCC) loss.
